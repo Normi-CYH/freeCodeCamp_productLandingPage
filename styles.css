@@ -1,0 +1,209 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  :root {
+    --mybc: #30475E;
+    --myfc: #E7DEC8;
+    --mykc: #CBAF87;
+    --mykc2: #7E8A97;
+    --mygc: #17202A;
+  }
+  body {
+    background-color: var(--mybc);
+    color: var(--myfc);
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 3px var(--mygc);
+    margin: 0;
+    padding: 10px 20px 0 20px;
+    position: fixed;
+    background-color: var(--mybc);
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .logo {
+    font-size: 32px;
+    margin-left: 10px;
+    color: var(--mykc);
+    text-decoration: none;
+  }
+  #nav-bar ul li {
+    display: inline;
+  }
+  #nav-bar a {
+    text-decoration: none;
+    color: var(--myfc);
+    padding: 10px 15px;
+  }
+  #nav-bar a:hover {
+    background-color: var(--mykc);
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  .form {
+    margin-top: 80px;
+    text-align: center;
+  }
+  .email-title {
+    color: var(--mykc);
+    font-size: 40px;
+    text-shadow: 2px 2px 3px var(--mygc);
+  }
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #email {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 5px 10px;
+  }
+  #submit {
+    margin-top: 10px;
+    font-size: 22px;
+    padding: 10px 30px;
+    background-color: var(--mykc);
+    border: none;
+    border-radius: 10px;
+  }
+  #submit:hover {
+    border: 3px solid var(--mykc);
+    background-color: var(--myfc);
+    color: var(--mykc);
+    font-weight: bold;
+  }
+  .features {
+    width: 700px;
+    margin: auto;
+    padding-top: 80px;
+  }
+  .feature {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+  }
+  .feature_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    margin-right: 60px;
+    color: var(--mykc);
+    width: 20px;
+  }
+  .feature_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .feature_content h1 {
+    font-size: 22px;
+  }
+  .feature_content p {
+    line-height: 20px;
+    text-align: justify;
+  }
+  .video {
+    text-align: center;
+  }
+  #video {
+    padding-top: 80px;
+    width: 600px;
+    height: 400px;
+  }
+  .pricing {
+    width: 850px;
+    margin: auto;
+    display: flex;
+    padding-top: 80px;
+  }
+  .price {
+    border: 1px solid var(--mykc2);
+    margin: 0 10px;
+    width: 250px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .price_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+  }
+  .title {
+    background-color: var(--mykc2);
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--mybc);
+    font-weight: bold;
+  }
+  .pp {
+    text-align: center;
+    font-size: 18px;
+  }
+  .description {
+    text-align: center;
+    margin: 0 15px;
+    line-height: 18px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .btn button {
+    padding: 5px 30px;
+    background-color: var(--mykc);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .btn button:hover {
+    border: 2px solid var(--mykc);
+    background-color: var(--myfc);
+    color: var(--mykc);
+  }
+  footer {
+    background-color: var(--mykc2);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 80px;
+    text-align: right;
+    color: var(--mybc);
+  }
+  footer ul li {
+    display: inline;
+  }
+  footer a {
+    text-decoration: none;
+    margin: 10px;
+    color: var(--mybc);
+  }
+  footer a:hover {
+    color: var(--mykc);
+  }
+  footer p {
+    margin-right: 10px;
+  }
+  @media (max-width: 720px) {
+    #header .logo {
+      display: none;
+    }
+    #header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
